@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+    - name: dim_customers
+      description: "dimension model for customers table"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+          - name: first_name
+            description: "name of the customer"
+          - name: last_name
+            description: "last name of the customer"

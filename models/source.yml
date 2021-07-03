@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: project_jaffle # this is the source_name
+    database: dbt
+
+    tables:
+      - name: raw_customers # this is the table_name
+      - name: raw_orders
