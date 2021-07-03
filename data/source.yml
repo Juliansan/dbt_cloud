@@ -1,0 +1,16 @@
+version: 2
+
+seeds:
+  - name: raw_customer
+    description: 'This file give us info on customers data'
+    docs:
+      show: true
+
+  - name: raw_orders
+    description: 'This file give us info on orders data'
+    docs:
+      show: true
+  - name: raw_payments
+    description: 'This file give us info on payment data'
+    docs:
+      show: true
