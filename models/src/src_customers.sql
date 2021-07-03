@@ -1,6 +1,13 @@
+{{ config(
+	schema = 'source'
+) }}
+
+
+
 WITH customers AS (
 	SELECT *
-	FROM "RAW".raw_customers
+	FROM {{ source('RAW','raw_customers') }}
+	--{{ target.schema }} 
 )
 SELECT id,
 		first_name,

@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: RAW # this is the source_name
+    tables:
+      - name: raw_customers # this is the table_name
+        description: "details about the customers"
+      - name: raw_orders
+        description: "details about the orders"
+      - name: raw_payments
+        description: "details about the payments"        

@@ -34,6 +34,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   project_jaffle:
       # Applies to all files under models/example/
-      example:
+      src:
           materialized: view
+          schema: source
 
+seeds:
+  project_jaffle:
+    +enabled: true
+    +schema: RAW
+    +database: DBT
+   
