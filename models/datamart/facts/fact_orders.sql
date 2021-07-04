@@ -16,6 +16,7 @@
         FROM stg_orders o
         LEFT JOIN stg_payments_stripe ps 
             ON o.order_id = ps.order_id
+        GROUP BY 1,2
     )
     SELECT * 
     FROM fact_orders

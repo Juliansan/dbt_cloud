@@ -38,6 +38,8 @@ models:
           materialized: view
           schema: source
       staging:
+          materialized: table
+          schema: staging      
           stripe:
             materialized: table
             schema: staging

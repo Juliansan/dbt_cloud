@@ -1,0 +1,16 @@
+version: 2
+
+models:
+    - name: stg_orders
+      columns:
+          - name: order_id
+            description: "The primary key for this table"
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            description: "Foreing key that links the data to customers table"
+          - name: order_date
+            description: "date when the orders has been placed."
+          - name: status
+            description: "status of the orders, it can contain 5 values: return_pending, returned, completed, placed, shipped."
