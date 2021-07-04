@@ -37,6 +37,17 @@ models:
       src:
           materialized: view
           schema: source
+      staging:
+          stripe:
+            materialized: table
+            schema: staging
+      datamart:
+        core:
+          materialized: table
+          schema: datamart
+        facts:
+          materialized: table
+          schema: datamart
 
 seeds:
   project_jaffle:

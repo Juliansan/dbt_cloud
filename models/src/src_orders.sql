@@ -10,7 +10,7 @@ WITH orders AS (
 	--{{ target.schema }} 
 )
 SELECT id,
-		user_id,
+		user_id					AS customer_id,
 		order_date,
 		status
 FROM orders
